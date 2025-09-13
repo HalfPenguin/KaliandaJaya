@@ -1,0 +1,360 @@
+/*  Sass template   */ /*  Global CSS  */
+body {
+  background: #000000;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*  User Interface */
+#user-interface {
+  background: #0c0c0c;
+  color: white;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 99;
+  box-shadow: 0px 0px 0px 8px rgba(134, 134, 134, 0.349);
+  transition: top, 0.5s;
+}
+
+.top-user {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+.top-user a {
+  color: white;
+  display: block;
+  font-size: 22px;
+  padding: 15px;
+  text-decoration: none;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+.top-user li {
+  display: inline-flex;
+  float: left;
+  margin: 0;
+  position: relative;
+}
+
+.top-user a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2.2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(255, 255, 255);
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
+}
+
+.top-user a:hover::before,
+.top-user a:active::before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.top-user a:hover {
+  background-color: rgb(148, 148, 148);
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.drp-1 {
+  width: 65px;
+}
+
+.drpcontent-1 a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 5px 0px 5px 0px;
+}
+
+.drpcontent-1 {
+  display: none;
+  position: absolute;
+  background: rgb(182, 173, 173);
+  box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.705);
+  padding: 8px;
+  width: 100px;
+}
+
+.drp-1:hover .drpcontent-1 {
+  display: block;
+}
+
+.drp-1:hover {
+  color: rgb(252, 206, 150);
+}
+
+.drpcontent-1 a:hover {
+  color: rgb(252, 206, 150);
+}
+
+.social {
+  position: fixed;
+  right: 0px;
+  margin-top: 42vh;
+  z-index: 99;
+}
+
+.social:hover {
+  cursor: pointer;
+}
+
+.social div {
+  padding-top: 5px;
+  background-color: black;
+  width: 100px;
+  transition: 0.5s ease;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.6);
+  filter: opacity(80%);
+}
+
+.social div:hover {
+  transform: translateX(-37px);
+}
+
+/* Top Main carousel  */
+.item {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: 0.7s;
+}
+
+.item img {
+  position: absolute;
+  width: 100%;
+}
+
+.item h2, p {
+  position: relative;
+  color: white;
+}
+
+.item h2 {
+  font-size: 60px;
+}
+
+.item p {
+  font-size: 30px;
+}
+
+.item-caption {
+  z-index: 0;
+  background-color: rgba(102, 102, 102, 0.644);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
+  padding: 0 10px;
+}
+
+#ScrollDown:hover {
+  background-color: rgba(170, 170, 170, 0.801);
+}
+
+/*  Body Main   */
+#body-contain {
+  justify-content: center;
+  text-align: center;
+}
+
+#body-contain img {
+  border-radius: 10px;
+  margin: 15px;
+  width: 50%;
+}
+
+.row-1 img {
+  float: left;
+}
+
+.row-2 img {
+  float: right;
+}
+
+.row-3 img {
+  float: left;
+}
+
+.contain h1 {
+  margin: 100px 30px 30px 0px;
+  color: white;
+}
+
+.main-s1 {
+  color: white;
+  font-style: italic;
+  font-size: 50px;
+}
+
+#body-contain h1 p {
+  z-index: 0;
+}
+
+/* Footer Main  */
+/* Google maps style 
+iframe{
+    border:1px solid black;
+    border-radius: 10px;
+    width: 100%;
+}
+*/
+.table h5 {
+  color: black;
+}
+
+.table tbody tr td {
+  color: black;
+  padding: 20px;
+}
+
+.contain {
+  padding: 40px 0px;
+}
+
+/*  Sass product template   */
+/*  Product css */
+.product {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f5f8ff;
+}
+
+.wrapper {
+  width: 50%;
+  margin: 0 auto;
+  padding: 5vh;
+  text-align: center;
+}
+
+#search-container {
+  margin: 1em 0;
+}
+
+#search-container input {
+  background-color: white;
+  width: 40%;
+  border-bottom: 2px solid #110f29;
+  padding: 1em 0.3em;
+}
+
+#search-container input:focus {
+  border-bottom-color: #a7a7a7;
+}
+
+#search-container button {
+  padding: 1em 2em;
+  margin-left: 1em;
+  background-color: #a7a7a7;
+  color: #ffffff;
+  border-radius: 5px;
+  margin-top: 0.5em;
+}
+
+.button-value {
+  border: 2px solid #a7a7a7;
+  padding: 1em 2.2em;
+  border-radius: 3em;
+  background-color: transparent;
+  color: #a7a7a7;
+  cursor: pointer;
+}
+
+.active {
+  background-color: #a7a7a7;
+  color: #ffffff;
+}
+
+#buttons button:hover {
+  background-color: #a7a7a7;
+  color: #ffffff;
+}
+
+#products {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 1.5em;
+  padding: 2em 0;
+  text-align: center;
+}
+
+.card {
+  background-color: #ffffff;
+  max-width: 18em;
+  margin-top: 1em;
+  padding: 1em;
+  border-radius: 5px;
+  box-shadow: 1em 2em 2.5em rgba(1, 2, 68, 0.08);
+}
+
+.image-container {
+  text-align: center;
+}
+
+#product img {
+  max-width: 100%;
+  object-fit: contain;
+  height: 15em;
+}
+
+.container {
+  padding-top: 1em;
+  color: #110f29;
+}
+
+.container h5 {
+  font-weight: 500;
+}
+
+.hide {
+  display: none;
+}
+
+@media screen and (max-width: 720px) {
+  img {
+    max-width: 100%;
+    object-fit: contain;
+    height: 10em;
+  }
+  .card {
+    max-width: 10em;
+    margin-top: 1em;
+  }
+  #products {
+    grid-template-columns: auto auto;
+    grid-column-gap: 1em;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

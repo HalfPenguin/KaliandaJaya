@@ -1,0 +1,32 @@
+/* Top Main carousel  */
+.item{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: .7s
+}
+.item img{
+    position: absolute;
+    width: 100%;
+}
+.item h2, p{
+    position: relative;
+    color: white;
+}
+.item h2{
+    font-size: 60px;
+}
+.item p{
+    font-size: 30px;
+}
+
+.item-caption{
+    z-index: 0;
+    background-color: rgba(102, 102, 102, 0.644);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
+    padding: 0 10px;
+}
+
+#ScrollDown:hover{background-color: rgba(170, 170, 170, 0.801);}

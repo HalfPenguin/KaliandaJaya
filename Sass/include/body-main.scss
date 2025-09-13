@@ -1,0 +1,42 @@
+/*  Body Main   */
+#body-contain{
+    justify-content: center;
+    text-align: center;
+}
+
+#body-contain img{
+    border-radius: 10px;
+    margin: 15px;
+    width: 50%;
+}
+#body-contain h1 h2 h3 h4{
+    margin: 20px;
+}
+
+.row-1 img{
+    float: left;
+}
+
+.row-2 img{
+    float: right;
+}
+
+.row-3 img{
+    float: left;
+}
+
+.contain h1{
+    margin: 100px 30px 30px 0px;
+    color: white;
+}
+
+.main-s1{
+    color: white;
+    font-style: italic;
+    font-size: 50px;
+}
+
+
+#body-contain h1 p{
+    z-index: 0;
+}

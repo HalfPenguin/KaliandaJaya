@@ -1,0 +1,118 @@
+/*  User Interface */
+#user-interface{
+    background: #0c0c0c;
+    color: white;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 99;
+
+    box-shadow: 0px 0px 0px 8px rgba(134, 134, 134, 0.349);
+    transition: top, 0.5s;
+}
+
+.top-user{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        -webkit-font-smoothing: antialiased;
+    }
+    
+    .top-user a{
+        color: white;
+        display: block;
+        font-size: 22px;
+        padding: 15px;
+        text-decoration: none;
+        -webkit-transition: all .25s ease;
+        -moz-transition: all .25s ease;
+        -ms-transition: all .25s ease;
+        -o-transition: all .25s ease;
+        transition: all .25s ease;
+    }
+
+    .top-user li{
+        display: inline-flex;
+        float: left;
+        margin: 0;
+        position: relative;
+    }
+
+.top-user a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2.2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(255, 255, 255);
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all .5s ease-in-out 0s;
+  transition: all .5s ease-in-out 0s;
+}
+
+.top-user a:hover::before,
+.top-user a:active::before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+    .top-user a:hover{
+        background-color:rgb(148, 148, 148);
+        color: rgb(0, 0, 0);
+        cursor: pointer;
+        text-decoration: none;
+    }
+        .drp-1{
+            width: 65px;
+        }    
+            .drpcontent-1 a{
+                text-decoration: none;
+                color: white;
+                display: block;
+                padding: 5px 0px 5px 0px;
+            }
+            .drpcontent-1{
+                display: none;
+                position: absolute;
+                background: rgb(182, 173, 173);
+                box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.705);
+                padding: 8px;
+                width: 100px;
+            }
+                .drp-1:hover .drpcontent-1{
+                    display: block;
+
+                }
+                .drp-1:hover{
+                    color: rgb(252, 206, 150);
+                }
+                .drpcontent-1 a:hover{
+                    color: rgb(252, 206, 150);
+                }
+        .social{
+                position: fixed;
+                right: 0px;
+                margin-top: 42vh;
+                z-index: 99;
+        }
+        .social:hover{
+            cursor: pointer;
+        }
+        .social div{
+            padding-top: 5px;
+            background-color: black;
+            width: 100px;
+            transition: 0.5s ease;
+            box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.6);
+            filter: opacity(80%);
+            
+        }
+            .social div:hover{
+                transform: translateX(-37px);
+            }

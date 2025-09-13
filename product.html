@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalianda Jaya</title>
+    
+    <!--Link to main css-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!--    Bootstrap CDN   -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <!--Link to main css-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body style="background-color: black;">    
+
+  <!--User-Interface start-->
+      <div onscroll="uiFunction()" id="user-interface">
+        <div>
+            <ul class="top-user">
+            <li><a href="./main.html">Beranda</a></li>
+              <li><a href="./product.html">Produk</a></li>
+            <li><a href="./place.html">Tempat</a></li>
+          <li><a href="./info.html">Tentang Kami</a></li>
+          <li><a href="./contact.html">Kontak Kami</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div>
+      <div class="social" style="height: 45px; width: 45px; margin-top: 35em;">
+        <a href="https://api.whatsapp.com/send?phone=+62 816 333 250&text=Selemat%20datang%20ke%20KaliandaJaya.%20Kontak%20kami%20untuk%20mendapati%20informasi%20terlebih%20tentang%20produknya!%20Terimakasih%20telah%20mengunjung%20KaliandaJaya%20website!">
+        <div>
+          <img style="width: 40px; padding: 5px 5px;" src="assets/social media/black whatsapp icon2.png" alt="whatsapp">
+        </div>
+        </a>
+        <a href="https://www.instagram.com/kaliandajaya/">
+        <div>            
+          <img style="width: 40px; padding: 5px 5px;" src="assets/social media/black instagram icon3.png" alt="instagram">
+        </div>
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=100089186567583">
+        <div>
+          <img style="width: 40px; padding: 5px 5px;" src="assets/social media/black facebook icon4.png" alt="facebook">
+        </div>
+        </a>
+        <a href="https://www.linkedin.com/in/kaliandajaya-142565261">
+        <div>
+          <img style="width: 40px; padding: 5px 5px;" src="assets/social media/black linkedin icon3.png" alt="linkedin">
+        </div>
+        </a>
+      </div>
+    </div>
+  <!--User-Interface-End-->
+
+  <body>
+    <center><img src="./assets/design/Kalianda Jaya poster 2.jpg" alt="poster-2" style="width: 50%; margin-top: 8vh; height: 40vh; text-align: center;"></center>
+
+    <div class="product">
+    <div class="wrapper">
+      <div id="search-container">
+        <input
+          type="search"
+          id="search-input"
+          placeholder="Search product name here.."
+        />
+        <button id="search">Search</button>
+      </div>
+      <div id="buttons">
+        <button class="button-value" onclick="filterProduct('all')">All</button>
+        <button class="button-value" onclick="filterProduct('Truck')">
+          Truck
+        </button>
+        <button class="button-value" onclick="filterProduct('Excavator')">
+          Excavator
+        </button>
+      </div>
+      <div id="products">
+      </div>
+    </div>
+    </div>
+    <!-- Script -->
+    <script src="Js/product.js"></script>
+  
+
+
+    <!--Footer start-->
+    <footer id="footer" style="background-color: #fa8253;">
+        <div class="contain">
+          <div style="display:flex;">
+            <div class="col-lg-5 col-md-6 mt-3">
+              <img src="./assets/design/Board.png" alt="Kalianda Jaya" style="width: 600px;">
+              <!-- Google map embed
+              <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=550&amp;height=450&amp;hl=en&amp;q=Jln. Sun Yat Sen No.49/27J&amp;t=&amp;z=20&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe></div><style>.mapouter{position:relative;text-align:right;width:100%;height:450px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:450px;}.gmap_iframe {height:450px!important;}</style></div>
+            </div>
+          -->
+          </div>
+            <div class="col-lg-3 col-md-8 mt-5">
+              <h4 class="mb-1 text-dark">Jam Operasi</h4><br>
+              <table class="table" style="border-color: #666;">
+                <tbody style="font-size: 20px;">
+                  <tr>
+                    <td>Senin - Jumat :</td>
+                    <td>8am - 9pm</td>
+                  </tr>
+                  <tr>
+                    <td>Sabtu :</td>
+                    <td>8am - 1am</td>
+                  </tr>
+                  <tr>
+                    <td>Minggu  :</td>
+                    <td>Tutup</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-lg-3 col-md-6 mt-5 ml-5">
+              <h4 class="mb-1 text-dark">Kontak Kami</h4><br>
+              <table class="table" style="border-color: rgb(255, 255, 255);">
+              <tbody style="font-size: 25px;">
+                <tr>
+                  <td><b>0816 333 250</b></td>
+                </tr>
+                <tr>
+                <td><b>0852 9742 8325</b></td>
+                </tr>
+                <tr>
+                  <td><b>0811 6084 206</b></td>
+                </tr>
+              </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2022 Copyright:
+          <a class="text-dark" href="https://mdbootstrap.com/">KaliandaJaya</a>
+        </div>
+
+      </footer>
+  <!--Footer end-->
+
+<!--  Bootstrap Js -->
+<script src="Js/jquery.min.js"></script>
+<script src="Js/popper.js"></script>
+<script src="Js/bootstrap.min.js"></script>
+
+
+<!--    Link to main custon JS    -->
+<script src="Js/main.js"></script>
+
+</body>
